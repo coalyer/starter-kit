@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "server": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/coalyer/starter-kit/issues"
   },
-  "homepage": "https://github.com/coalyer/starter-kit#readme"
+  "homepage": "https://github.com/coalyer/starter-kit#readme",
+  "dependencies": {
+    "easy-router": "^2.3.1"
+  }
 }
