@@ -8,6 +8,6 @@
 
 | 标题 |  |
 |:-------- |:--------:|
-| [初始化地图](http://coalyer.github.io/starter-kit/src/Leaflet/Leaflet/index.html) | [查看代码](https://github.com/coalyer/starter-kit/tree/master/src/Leaflet/Leaflet) |
+| [初始化地图](http://coalyer.github.io/starter-kit/src/Leaflet/Leaflet/index.html) | [查看代码](https://github.com/coalyer/starter-kit/tree/master/src/Leaflet/Leaflet/index.html) |
 
 [/placeholder]: p

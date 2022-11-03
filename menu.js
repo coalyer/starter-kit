@@ -17,7 +17,7 @@ let ul_htmlAll = `\n<div class="view">`// html的添加节点
 ul_htmlAll += `\n<ul class='main'>`
 
 let readmeAll = fs.readFileSync('./README.md').toString()
-let md_valueAll = '| 标题 |  |\n|:-------- |:--------:|\n'
+let md_valueAll = '| 技术 | Demos |\n|:-------- |:--------:|\n'
 
 // 对文件夹更改进行排序，按照活跃时间进行排序
 filesAll.sort(function (a, b) {
@@ -56,8 +56,8 @@ filesAll.forEach(function (fAll) { // 循环一级文件夹
         const address = pagePreFix + p[0]
         const filedir = path.dirname(sourcePrefix + p[0]) //!返回path的目录。类似于UNIX目录命令
         const url = `../${p[0]}` // 因为菜单在menus文件夹中，所以要像上退一级
-        ul_html += `\n<li>\n<a href='${url}' target='_blank' class='demo-name' title='效果预览'>${title}</a><a href='${filedir}' class='demo-source' target='_blank' title='点击查看源码'>源码</a>\n</li>`
-        md_value += `| [${title}](${address}) | [查看代码](${filedir}) |\r`
+        ul_html += `\n<li>\n<a href='${url}' target='_blank' class='demo-name' title='效果预览'>${title}</a><a href='${filedir}/${p[1]}' class='demo-source' target='_blank' title='点击查看源码'>源码</a>\n</li>`
+        md_value += `| [${title}](${address}) | [查看代码](${filedir}/${p[1]}) |\r`
       })
       ul_html += `\n</ul>\n`
     }
@@ -77,9 +77,7 @@ filesAll.forEach(function (fAll) { // 循环一级文件夹
     fs.writeFileSync(`./menus/${fAll}.html`, html)
   })
   ul_htmlAll += `\n<li>\n<a href='./menus/${fAll}.html' target='_blank' class='demo-name' title='效果预览'>${fAll}</a>\n</li>`
-  //<a href='${sourcePrefix}menus/${fAll}' class='demo-source' target='_blank' title='点击查看源码'>源码</a>
-  md_valueAll += `| ${fAll} | [查看](${sourcePrefix}docs/${fAll}) |\r`
-  console.log(sourcePrefix)
+  md_valueAll += `| ${fAll} | [查看](${sourcePrefix}docs/${fAll}.md) |\r`
 })
 ul_htmlAll += `</div>\n`
 //   `

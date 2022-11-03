@@ -1,6 +1,6 @@
 # starter-kit
 
-此项目为学习和工作中遇到的`公共前端`和`专业前端`的问题，并以 Demo 的形成记录下来。<br>
+此项目作为记录学习和工作中遇到的`公共前端`和`专业前端`问题，并以 Demo 的形成呈现出来。<br>
 
 > 本项目中的 demo 均为自己的学习`front end`之作，部分创意非原创。
 
@@ -30,9 +30,9 @@ npm run build
 
 [placeholder]: p
 
-| 标题 |  |
-|:-------- |:--------:|
-| Leaflet | [查看](https://github.com/coalyer/starter-kit/tree/master/docs/Leaflet) |
+| 技术    |                                   Demos                                    |
+| :------ | :------------------------------------------------------------------------: |
+| Leaflet | [查看](https://github.com/coalyer/starter-kit/tree/master/docs/Leaflet.md) |
 
 [/placeholder]: p
 
