@@ -30,9 +30,9 @@ npm run build
 
 [placeholder]: p
 
-| 技术    |                                   Demos                                    |
-| :------ | :------------------------------------------------------------------------: |
-| Leaflet | [查看](https://github.com/coalyer/starter-kit/tree/master/docs/Leaflet.md) |
+| 技术 | Demos |
+|:-------- |:--------:|
+| Leaflet | [查看](https://github.com/coalyer/starter-kit/tree/master/docs/Leaflet.md) || HTML | [查看](https://github.com/coalyer/starter-kit/tree/master/docs/HTML.md) |
 
 [/placeholder]: p
 

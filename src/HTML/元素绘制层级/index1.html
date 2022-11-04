@@ -1,0 +1,33 @@
+<!--详见：https://blog.csdn.net/ForeverCjl/article/details/107708711-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>默认层级</title>
+    <style>
+      #a {
+        width: 100px;
+        height: 100px;
+        background: red;
+      }
+
+      #b {
+        width: 100px;
+        height: 100px;
+        background: blue;
+        margin-top: -50px;
+        margin-left: 50px;
+        /* position: relative;
+        z-index: -1; */
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+      !默认层级：后绘制的放在先绘制的上面
+      蓝色div是写在红色div后面的，浏览器在渲染的时候，先绘制了红色div，然后再绘制蓝色div
+    -->
+    <div id="a">I AM A DIV</div>
+    <div id="b">I AM B DIV</div>
+  </body>
+</html>

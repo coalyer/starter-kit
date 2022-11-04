@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>02.transform设置层级</title>
+    <style>
+      #a {
+        width: 100px;
+        height: 100px;
+        background: red;
+      }
+
+      #b {
+        width: 100px;
+        height: 100px;
+        background: blue;
+        margin-top: -50px;
+        margin-left: 50px;
+      }
+
+      #c {
+        width: 100px;
+        height: 100px;
+        background: green;
+        position: relative;
+        margin-top: -50px;
+        margin-left: -25px;
+        transform: translateZ(1px);
+      }
+
+      #container {
+        transform-style: preserve-3d;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+      !transform设置层级：transform-style: preserve-3d将该层叠栈3D化。
+      想要将绿色div渲染在红色div上，只需要给绿色div设置transform属性，并往Z轴正方向移动大于0px的距离即可。
+    -->
+    <div id="container">
+      <div id="a">I AM A DIV</div>
+      <div id="b">
+        I AM B DIV
+        <div id="c">I AM C DIV</div>
+      </div>
+    </div>
+  </body>
+</html>

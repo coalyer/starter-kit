@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>z-index值越高，渲染的层级就一定越高吗？</title>
+    <style>
+      #a {
+        width: 100px;
+        height: 100px;
+        background: red;
+      }
+
+      #b {
+        width: 100px;
+        height: 100px;
+        background: blue;
+        margin-top: -50px;
+        margin-left: 50px;
+        position: relative;
+        z-index: -1;
+      }
+
+      #c {
+        width: 100px;
+        height: 100px;
+        background: green;
+        position: relative;
+        z-index: 1000;
+        margin-top: -50px;
+        margin-left: -25px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+      !层叠栈(stacking context)：可以简单理解为一个渲染单元，浏览器在进行渲染的时候，会独立计算这个独立单元的层级。
+      在上面的demo中，蓝色div与绿色div为一个层叠栈，无论怎么给这两个div设置z-index值，都只会影响该栈上下文中的渲染层级。
+    -->
+    <div id="a">I AM A DIV</div>
+    <div id="b">
+      I AM B DIV
+      <div id="c">I AM C DIV</div>
+    </div>
+  </body>
+</html>
