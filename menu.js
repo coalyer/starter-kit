@@ -103,9 +103,9 @@ function findHtml (folder_path, collector) {
       findHtml(npath, collector)
       return
     }
-    // if (/^[^_].+\.html/.test(f)) { // 不做单一字符判断
-    collector.push([npath, f, stat])
-    // }
+    if (/^[^_].+\.html/.test(f)) {  // 只筛选出.html文件
+      collector.push([npath, f, stat])
+    }
   })
   return collector
 }

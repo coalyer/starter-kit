@@ -32,7 +32,7 @@ npm run build
 
 | 技术 | Demos |
 |:-------- |:--------:|
-| Leaflet | [查看](https://github.com/coalyer/starter-kit/tree/master/docs/Leaflet.md) || HTML | [查看](https://github.com/coalyer/starter-kit/tree/master/docs/HTML.md) |
+| Leaflet教程 | [查看](https://github.com/coalyer/starter-kit/tree/master/docs/Leaflet教程.md) || Leaflet插件 | [查看](https://github.com/coalyer/starter-kit/tree/master/docs/Leaflet插件.md) || HTML | [查看](https://github.com/coalyer/starter-kit/tree/master/docs/HTML.md) |
 
 [/placeholder]: p
 
